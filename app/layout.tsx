@@ -15,6 +15,11 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "국민연금 개혁안 의원별 입장",
   description: "2025년 3월 21일 의안 번호 2209191",
+  openGraph: {
+    title: "국민연금 개혁안 의원별 입장",
+    description: "2025년 3월 21일 의안 번호 2209191",
+    images: [{ url: "/logo.jpg" }],
+  },
 };
 
 export default function RootLayout({
