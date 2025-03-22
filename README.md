@@ -1,36 +1,57 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 국민연금 개혁안 의원별 입장 트래커
 
-## Getting Started
+이 프로젝트는 국회의원들의 국민연금 개혁안에 대한 찬반 입장을 시각화하고 분석하는 웹 애플리케이션입니다.
 
-First, run the development server:
+## 프로젝트 소개
 
+2025년 3월 21일 의안 번호 2209191 국민연금 개혁안에 대한 국회의원들의 입장(찬성, 반대, 기권, 미참여)을 쉽게 확인할 수 있도록 제작되었습니다. 사용자는 다양한 필터링 옵션을 통해 특정 정당이나 의원의 입장을 빠르게 찾아볼 수 있습니다.
+
+## 주요 기능
+
+- **입장별 필터링**: 찬성, 반대, 기권, 미참여로 국회의원 목록 필터링
+- **정당별 필터링**: 특정 정당에 속한 의원들만 표시
+- **검색 기능**: 의원 이름, 지역, 소속위원회로 검색
+- **정당 시각화**: 각 정당별 로고와 색상으로 시각적 구분
+- **상세 정보 제공**: 각 의원의 정당, 지역구, 소속위원회, 성별, 당선횟수 등 표시
+
+## 기술 스택
+
+- **프레임워크**: Next.js
+- **스타일링**: Tailwind CSS
+- **데이터 관리**: React Hooks (useState, useEffect)
+- **이미지 처리**: Next.js Image 컴포넌트
+
+## 실행 방법
+
+1. 저장소 클론:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone [저장소 URL]
+cd nps-list
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. 의존성 설치:
+```bash
+npm install
+# 또는
+yarn install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. 개발 서버 실행:
+```bash
+npm run dev
+# 또는
+yarn dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. 브라우저에서 [http://localhost:3000](http://localhost:3000) 접속
 
-## Learn More
+## 데이터 구조
 
-To learn more about Next.js, take a look at the following resources:
+이 프로젝트는 다음과 같은 데이터 파일을 사용합니다:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- `public/list.json`: 국회의원 기본 정보
+- `public/party/`: 정당별 로고 이미지 폴더
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 라이센스
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+이 프로젝트는 MIT 라이센스를 따릅니다.
