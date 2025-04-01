@@ -29,21 +29,5 @@ export default function Home() {
         </button>
       </div>
     </div>
-    // <div className="relative h-screen w-full overflow-hidden">
-    //   <div className="flex justify-center items-center w-full h-full">hihi</div>
-    //   <div className="flex justify-end w-full inset-0">
-    //     <Image
-    //       src="/dosan.jpg"
-    //       alt="배경 이미지"
-    //       fill
-    //       className={`${styles.windAnimation}`}
-    //       priority
-    //     />
-    //   </div>
-
-    //   {/* <div className="relative z-10 flex flex-col h-full">
-    //     <header className="flex gap-x-4 justify-center items-center mt-4"></header>
-    //   </div> */}
-    // </div>
   );
 }
