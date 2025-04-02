@@ -22,7 +22,7 @@ export default function Home() {
           className="flex items-center gap-x-2 border border-white rounded-xl px-4 py-2 cursor-pointer"
           onClick={() => router.push("/agreement")}
         >
-          <span>찬성한 사람 알아보기</span>
+          <span>찬성한 의원 알아보기</span>
           <span>
             <MoveRight />
           </span>
