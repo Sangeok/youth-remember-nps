@@ -92,10 +92,10 @@ export default function AdvocacySlider() {
   }, [isHovered, animationPaused, advocacyContent]);
 
   return (
-    <div className="w-full bg-white py-12">
+    <div className="w-full bg-white py-6">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-2xl font-bold text-center text-gray-800 mb-8">
-          국민연금 옹호 발언자
+          국민연금 옹호 발언
         </h2>
 
         <div
